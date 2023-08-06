@@ -8,13 +8,13 @@ public class MenuDTO {
     private int code;
     private String name;
     private int price;
-    private List<CategoryDTO> categoryCodeList;
+    private CategoryDTO categoryCodeList;
     private String orderableStatus;
 
     public MenuDTO() {
     }
 
-    public MenuDTO(int code, String name, int price, List<CategoryDTO> categoryCodeList, String orderableStatus) {
+    public MenuDTO(int code, String name, int price, CategoryDTO categoryCodeList, String orderableStatus) {
         this.code = code;
         this.name = name;
         this.price = price;
@@ -46,14 +46,13 @@ public class MenuDTO {
         this.price = price;
     }
 
-    public List<CategoryDTO> getCategoryCodeList() {
+    public CategoryDTO getCategoryCodeList() {
         return categoryCodeList;
     }
 
-    public void setCategoryCodeList(List<CategoryDTO> categoryCodeList) {
+    public void setCategoryCodeList(CategoryDTO categoryCodeList) {
         this.categoryCodeList = categoryCodeList;
     }
-    
 
     public String getOrderableStatus() {
         return orderableStatus;
@@ -74,5 +73,3 @@ public class MenuDTO {
                 '}';
     }
 }
-
-
